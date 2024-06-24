@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "diucampf_backend": {
+      "candid": "src/diucampf_backend/diucampf_backend.did",
+      "package": "diucampf_backend",
+      "type": "rust"
+    },
+    "diucampf_frontend": {
+      "dependencies": [
+        "diucampf_backend"
+      ],
+      "source": [
+        "src/diucampf_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "diucampf_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
