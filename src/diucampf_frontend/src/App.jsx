@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { diucampf_backend } from 'declarations/diucampf_backend';
 
 function App() {
   const [greeting, setGreeting] = useState('');
